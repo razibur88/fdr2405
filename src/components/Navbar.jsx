@@ -13,7 +13,7 @@ const Navbar = () => {
             <ul className="flex">
               <li>
                 <a
-                  className="font-semibold text-[16px] font-pops text-white capitalize px-[24px]"
+                  className="font-semibold text-[16px] font-pops text-white capitalize px-[24px] relative after:absolute after:left-0 after:bottom-[-10px] after:content-[''] after:w-0 after:duration-700 after:ease-in-out after:h-[3px] after:bg-white hover:after:w-full"
                   href="#"
                 >
                   Home
@@ -27,13 +27,20 @@ const Navbar = () => {
                   About
                 </a>
               </li>
-              <li>
+              <li className="relative group">
                 <a
                   className="font-semibold text-[16px] font-pops text-white capitalize px-[24px]"
                   href="#"
                 >
                   Services
                 </a>
+                <ul className="bg-pink-200 absolute opacity-0 z-10 left-0 top-[50px] w-[200px] group-hover:opacity-100">
+                  <li>serone</li>
+                  
+                  <li>serone</li>
+                  <li>serone</li>
+                  <li>serone</li>
+                </ul>
               </li>
               <li>
                 <a
